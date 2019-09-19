@@ -1,6 +1,14 @@
 @import "variable.scss";
 
 .chat__side {
+  a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}  
 
   &__top {
     box-sizing: border-box;
@@ -17,26 +25,29 @@
     &__icon {
       margin-left: auto;
     }
-      a:visited {
-        color: white;
-      }
   }
 
   &__glist {
+    background-color: #2f3e51;
     box-sizing: border-box;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 82px);    
+    padding-top: 10px;    
+    color: #FFFFFF;
+    overflow: scroll;
     @include side-w;
-    padding-top: 10px;
     @include side-p;
   	background-color: #2f3e51;
-  	color: #FFFFFF;
-    overflow: scroll;
-  	&__name {
-      padding-top: 40px;
-      font-size: 15px;
-  	}
-  	&__message {
-      font-size: 11px;
-  	}
-  }
-}
+    &__group{
+
+      &__name {
+        font-size: 15px;
+        padding-top: 20px;
+      }
+      &__message {
+        font-size:11px;
+        padding-bottom: 20px;
+      }
+    }
+      }
+    }
+    
