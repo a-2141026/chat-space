@@ -1,4 +1,9 @@
 .chat__side__glist
-  .chat__side__glist__name
-    １つ目のグループ
-  .chat__side__glist__message まだメッセージはありません。
+    - current_user.groups.each do |group|  
+      .chat__side__glist__group    
+      = link_to group_messages_path(group) do
+        .chat__side__glist__group__name
+          = group.name
+        .chat__side__glist__group__message
+          まだメッセージはありません。 
+          
