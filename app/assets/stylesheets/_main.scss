@@ -19,7 +19,7 @@
 
 .chat__main__header {
   box-sizing: border-box;
-  height: 70px;
+  height: 110px;
   background-color: white;
   padding-top: 35px;
   display: flex;
@@ -45,9 +45,9 @@
 
 .main__message {
   box-sizing: border-box;
-  margin-top: 75px;
   background-color: #ffffff;
-  height: calc(100vh - 245px); 
+  height: calc(100vh - 245px);
+  padding-top: 75px; 
   overflow: scroll;
 
   &__box{
@@ -73,18 +73,25 @@
   }
 }
   }
+
 .main__footer {
+  background-color: #f5f5f5;
   box-sizing: border-box;
   height: 90px;
+  width: calc(100vw - 300px);
   padding-top: 20px;
   padding-left: 10px;
-  padding-bottom: 20px;
   display: flex;
+  position: absolute;
+  bottom: 0;
   &__text {
     color: $text-color;
-    float: left;
+    width: 1110px;
+  }
+  &__form__mask{
 
   }
+
   &__send-button {
     background-color: $button-color;
     color: white;
@@ -92,6 +99,20 @@
     @include side-p;
     text-align: center;
     line-height: 50px;
-    margin-left: auto;
   }
 }
+
+.icon {
+  padding-top: 20px;
+  }
+  
+  .hidden {
+  display: none;
+  }
+  
+  .new_message {
+    display: flex;
+  
+  
+  }
+  
