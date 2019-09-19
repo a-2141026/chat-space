@@ -1,0 +1,84 @@
+@import "variable.scss";
+
+.chat__main {
+  box-sizing: border-box;
+  @include main-p;
+  width: calc(100vw - 300px);
+  height: 100vh;
+}
+
+
+.chat__main__header {
+  box-sizing: border-box;
+  height: 70px;
+  background-color: white;
+  padding-top: 35px;
+  display: flex;
+  &__edit-button {
+    background-color: white;
+    border:  1px solid $button-color;
+    color: $button-color;
+    height: 40px;
+    @include side-p;
+    text-align: center;
+    line-height: 40px;
+    margin-left: auto;
+  }
+  &__gname {
+    @include font-size(20);  
+  }
+  &__member {
+    @include font-size(12);
+    color: $sub-text-color;
+  }    
+}
+
+
+.main__message {
+  box-sizing: border-box;
+  margin-top: 75px;
+  background-color: #ffffff;
+  height: calc(100vh - 245px); 
+  overflow: scroll;
+
+  &__top {   
+    display: flex;
+    &__name {
+      color: $text-color;
+      @include font-size(16);
+      font-weight: bold;
+      padding-right: var(--main-gutter);
+    }
+    &__submit-date-time {
+      color: $sub-text-color;
+      font-size: 12px;
+    }
+    &__text {
+      color: $text-color;
+      font-size: 14px;
+    }
+  }
+}
+
+.main__footer {
+  box-sizing: border-box;
+  height: 90px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  &__text {
+    color: $text-color;
+    float: left;
+
+  }
+  &__send-button {
+    background-color: $button-color;
+    color: white;
+    height: 50px;
+    @include side-p;
+    text-align: center;
+    line-height: 50px;
+    margin-left: auto;
+  }
+}
