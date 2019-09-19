@@ -1,0 +1,17 @@
+$text-color: #434A54;
+$sub-text-color: #999999;
+$button-color: #38AEF0;
+
+@mixin side-p {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@mixin side-w {
+  width: 300px;
+}
+
+@mixin main-p {
+  padding-right: 40px;
+  padding-left: 40px;
+}

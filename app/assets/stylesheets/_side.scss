@@ -1,0 +1,42 @@
+@import "variable.scss";
+
+.chat__side {
+
+  &__top {
+    box-sizing: border-box;
+    height: 82px;
+    @include side-w;
+  	background-color: #253141;
+    color: white;
+  	@include font-size(16);
+  	font-weight: bold;
+    @include side-p;
+  	padding-top: 35px;
+  	padding-bottom: 20px;
+    display: flex;
+    &__icon {
+      margin-left: auto;
+    }
+      a:visited {
+        color: white;
+      }
+  }
+
+  &__glist {
+    box-sizing: border-box;
+    height: calc(100vh - 82px);
+    @include side-w;
+    padding-top: 65px;
+    @include side-p;
+  	background-color: #2f3e51;
+  	color: #FFFFFF;
+    overflow: scroll;
+  	&__name {
+      padding-top: 40px;
+      @include font-size(15);
+  	}
+  	&__message {
+      @include font-size(11);
+  	}
+  }
+}
