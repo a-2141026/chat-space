@@ -1,10 +1,11 @@
-.main__message
-  .main__message__top
-    .main__message__box__top
+.main__message__box
+  .main__message__box__top
     .main__message__box__top__name
-      ユーザ名
+      = message.user.name
     .main__message__box__top__time
-      日にち
+      = message.created_at
   .main__message__box__text
-    テキスト
-    
+    - if message.content.present?
+      %p.lower-message__content
+        = message.content
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
