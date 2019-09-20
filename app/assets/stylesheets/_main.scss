@@ -93,7 +93,7 @@ a:link {
   bottom: 0;
   &__text {
     color: $text-color;
-    width: 1110px;
+    width: 800px;
 
   }
   &__form__mask{
@@ -107,6 +107,7 @@ a:link {
     @include side-p;
     text-align: center;
     line-height: 50px;
+    margin-left: 60px;
   }
 }
 
