@@ -1,6 +1,13 @@
 @import "variable.scss";
 
 .chat__main {
+  a:visited {
+    text-decoration: none;
+    color: $button-color;
+}
+a:link {
+    text-decoration: none;
+}  
   box-sizing: border-box;
   @include main-p;
   width: calc(100vw - 300px);
@@ -87,6 +94,7 @@
   &__text {
     color: $text-color;
     width: 1110px;
+
   }
   &__form__mask{
 
@@ -104,6 +112,8 @@
 
 .icon {
   padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   }
   
   .hidden {
