@@ -1,7 +1,6 @@
 $(function(){
   function buildHTML(message){
-    image = ( message.image ) ? `<asset_path src=${message.image} >` : "";
-    console.log(message.image)
+  	 image = ( message.image ) ? `<asset_path src=${message.image} >` : "";
   	  var html =
   	  `<div class="main__message__box">
   <div class="main__message__box__top">
@@ -17,15 +16,15 @@ $(function(){
         ${message.content}
       </p>
   </div>
-  ${image}
-  </div>`
-return html;	
+   ${image}
+</div>`
+return html;
 
 }
 
 
-$('#new_message').on('submit',function(e) {
-  e.preventDefault();
+  $('#new_message').on('submit',function(e) {
+    e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
     $.ajax({
@@ -36,15 +35,15 @@ $('#new_message').on('submit',function(e) {
       processData: false,
       contentType: false
     })
-    .done(function(data){
-      var html = buildHTML(data);
+	.done(function(data){
+		var html = buildHTML(data);
 	  	$('.main__message').append(html);
 	  	$('.main__message__box').animate({scrollTop: $('.main__message__box')[0].scrollHeight}, 'fast');
 	  	$('.main__footer__text').val('');
 	  	$(".main__footer__send-button").prop('disabled', false);
-    })
-    .fail(function(){
-      alert('error');
-      });
-    });
-  }); 
+	})
+	.fail(function(){
+	    alert('error');
+	});
+  });
+});
