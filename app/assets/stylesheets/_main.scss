@@ -2,12 +2,12 @@
 
 .chat__main {
   a:visited {
-    text-decoration: none;
-    color: $button-color;
-}
-a:link {
-    text-decoration: none;
-}  
+        text-decoration: none;
+        color: $button-color;
+  }
+  a:link {
+        text-decoration: none;
+  }  
   box-sizing: border-box;
   @include main-p;
   width: calc(100vw - 300px);
@@ -41,12 +41,12 @@ a:link {
     margin-left: auto;
   }
   &__gname {
-    font-size: 20px; 
+    font-size: 20px;  
   }
   &__member {
     font-size: 12px;
     color: $sub-text-color;
-  }    
+  } 
 }
 
 
@@ -56,36 +56,35 @@ a:link {
   height: calc(100vh - 245px);
   padding-top: 75px; 
   overflow: scroll;
+  
+  &__box {
+    margin-bottom: 40px;
 
-  &__box{
-  margin-bottom: 40px;
-
-  &__top {   
-    display: flex;
-
-    &__name {
+    &__top {   
+      display: flex;
+    
+      &__name {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &__time {
+        color: $sub-text-color;
+        font-size: 12px;
+        padding-left: 12px;      
+      }
+    }
+    &__text {
       color: $text-color;
-      font-size:16px;
-      font-weight: bold;
-    }
-    &__time {
-      color:$sub-text-color;
-      font-size: 12px;
-      padding-left:12px;
-    }
-  }
-  &__text {
-    color: $text-color;
-    font-size: 14px;
+      font-size: 14px;
+      }    
   }
 }
-  }
 
 .main__footer {
   background-color: #f5f5f5;
   box-sizing: border-box;
   height: 90px;
-  width: calc(100vw - 300px);
   padding-top: 20px;
   padding-left: 10px;
   display: flex;
@@ -93,36 +92,37 @@ a:link {
   bottom: 0;
   &__text {
     color: $text-color;
-    width: 1110px;
+    width: 800px;
 
   }
   &__form__mask{
-
+  
   }
-
+  
   &__send-button {
-    background-color: $button-color;
-    color: white;
-    height: 50px;
-    @include side-p;
-    text-align: center;
-    line-height: 50px;
+      background-color: $button-color;
+      color: white;
+      height: 50px;
+      @include side-p;
+      text-align: center;
+      line-height: 50px;
+      margin-left: 60px;
+
   }
 }
 
 .icon {
-  padding-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  }
+padding-top: 20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.hidden {
+display: none;
+}
+
+.new_message {
+  display: flex;
+
   
-  .hidden {
-  display: none;
-  }
-  
-  .new_message {
-    display: flex;
-  
-  
-  }
-  
+}
