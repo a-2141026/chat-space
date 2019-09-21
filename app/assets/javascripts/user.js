@@ -56,7 +56,6 @@ $(function() {
       .fail(function() {
         alert('ユーザー検索に失敗しました');
       })
-    });
 
     $(function(){
       $(document).on('click', '.user-search-add', function() {
@@ -70,5 +69,6 @@ $(function() {
         $(this).parent().remove();
       });
     });
+  });
   });
 });

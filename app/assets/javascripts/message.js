@@ -1,7 +1,8 @@
 $(function() {
   
   function buildHTML(message){
-    image = ( message.image ) ? `<asset_path src=${message.image} >` : "";
+
+    image = ( message.image ) ? `<img class= "lower-message__image" src=${message.image} >` : "";
   	  var html =
   	    `<div class="main__message__box" data-message-id= "${message.id}">
           <div class="main__message__box__top">
@@ -9,7 +10,10 @@ $(function() {
               ${message.user_name}
             </div>
             <div class="main__message__box__top__time">
-              ${message.time}
+
+
+              ${message.date}
+
             </div>
           </div>
           <div class="main__message__box__text">
