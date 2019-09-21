@@ -9,7 +9,7 @@ $(function() {
               ${message.user_name}
             </div>
             <div class="main__message__box__top__time">
-              ${message.time}
+              ${message.date}
             </div>
           </div>
           <div class="main__message__box__text">
