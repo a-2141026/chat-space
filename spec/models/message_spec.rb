@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe Message, type: :model do
@@ -37,4 +36,4 @@ RSpec.describe Message, type: :model do
       end
     end
   end
-end 
+end
